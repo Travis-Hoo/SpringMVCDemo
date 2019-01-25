@@ -1,2 +1,2 @@
-# springMVCDemo
-springMVC练习Demo
+# ssmDemo
+ssm练习Demo
