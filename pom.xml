@@ -55,24 +55,46 @@
 	</dependency>    
   </dependencies>
   
-  <repositories>
-  	<repository>
-  		<id>artifacts</id>
-  		<name>artifacts maven</name>
-  		<url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url>
-  	</repository>
-  </repositories>
+<!--  	<repositories>
+		<repository>
+			<id>alfresco-public</id>
+			<url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url> 		
+		<releases>
+		  <enabled>true</enabled>
+		</releases>
+		<snapshots>
+		  <enabled>false</enabled>
+		</snapshots>
+		</repository>
+	</repositories>
   
+	<pluginRepositories>
+	  <pluginRepository>
+	    <id>alfresco-public</id>
+	    <url>https://artifacts.alfresco.com/nexus/content/repositories/public/</url>
+	    <releases>
+	      <enabled>true</enabled>
+	    </releases>
+	    <snapshots>
+	      <enabled>false</enabled>
+	    </snapshots>    
+	  </pluginRepository>
+	</pluginRepositories>
+ -->  
 	<build>
 		<finalName>ssmDemo</finalName>
 		<plugins>
 			<plugin>
 			    <groupId>org.apache.tomcat.maven</groupId>
-			    <artifactId>tomcat8-maven-plugin</artifactId>
-			    <version>3.0-r1756463</version>
+			    <artifactId>tomcat7-maven-plugin</artifactId>
+			    <version>2.2</version>
 			    <configuration>
 			    	<project>
-			    		<url>https://47.97.163.216:8080/manager/text</url>
+			    		<url>http://47.97.163.216:8080/manager/text</url>
+						<path>/</path>
+						<server>tomcat7</server>
+						<username>root</username>
+						<password>Yxin1314</password>
 			    	</project>
 			    </configuration>
 			</plugin>
