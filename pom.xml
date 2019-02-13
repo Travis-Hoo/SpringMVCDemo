@@ -8,7 +8,8 @@
   <name>springMVCDemo Maven Webapp</name>
   
 	<properties>
-	<spring.version>4.3.22.RELEASE</spring.version>
+		<spring.version>4.3.22.RELEASE</spring.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
   
   <dependencies>
@@ -89,13 +90,9 @@
 			    <artifactId>tomcat7-maven-plugin</artifactId>
 			    <version>2.2</version>
 			    <configuration>
-			    	<project>
-			    		<url>http://47.97.163.216:8080/manager/text</url>
-						<path>/</path>
-						<server>tomcat7</server>
-						<username>root</username>
-						<password>Yxin1314</password>
-			    	</project>
+		    		<url>http://47.97.163.216:8080/manager/text</url>
+					<username>admin</username>
+					<password>admin</password>
 			    </configuration>
 			</plugin>
 		</plugins>
